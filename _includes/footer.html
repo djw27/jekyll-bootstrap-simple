@@ -1,0 +1,40 @@
+<hr>
+
+<!-- Footer -->
+<footer>
+<div class="row">
+                <div class="col-lg-12">
+    <p>Copyright &copy; {{ site.time | date: '%Y' }} {{ site.author.name }} <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    </p>
+    </div>
+    </div>
+    <ul class="list-inline">
+        {% if site.github_username %}
+        <li>
+            <i class="fa fa-github"></i>
+            <a href="https://github.com/{{ site.github_username }}">
+                {{ site.github_username }}
+            </a>
+        </li>
+        {% endif %}
+        {% if site.twitter_username %}
+        <li>
+            <i class="fa fa-twitter"></i>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+                {{ site.twitter_username }}
+            </a>
+        </li>
+        {% endif %}
+        {% if site.facebook_username %}
+        <li>
+            <i class="fa fa-facebook"></i>
+            <a href="https://facebook.com/{{ site.twitter_username }}">
+                {{ site.facebook_username }}
+            </a>
+        </li>
+        {% endif %}
+    </ul>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="{{ " /assets/js/bootstrap.js " | prepend: site.baseurl }}"></script>

@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<header class="page-header">
+  <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+</header>
+
+<div class="row-fluid post-full">
+  <div class="span12">
+
+    <article class="content">
+      {{ content }}
+    </article>
+
+    <hr>
+    <div class="pagination">
+      <ul>
+      {% if page.previous %}
+        <li class="prev"><a href="{{ page.previous.url | prepend: site.baseurl }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+      {% endif %}
+
+      {% if page.next %}
+        <li class="next"><a href="{{ page.next.url | prepend: site.baseurl  }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+      {% endif %}
+      </ul>
+    </div>
+  </div>
+</div>
