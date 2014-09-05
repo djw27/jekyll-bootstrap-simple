@@ -13,19 +13,17 @@ navigation:
 <!DOCTYPE html>
 <html lang="en">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
 
     {% include header.html %}
     <!-- Page Content -->
-<div class="container-fluid">
-        {{ content }}
-
-    {% include footer.html %}
+    <div class="container-fluid">
+        {{ content }} {% include footer.html %}
     </div>
-<!-- /.container -->
+    <!-- /.container -->
 
-  </body>
+</body>
 
 </html>

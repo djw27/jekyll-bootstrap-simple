@@ -2,11 +2,11 @@
 
 <!-- Footer -->
 <footer>
-<div class="row">
-                <div class="col-lg-12">
-    <p>Copyright &copy; {{ site.time | date: '%Y' }} {{ site.author.name }} <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-    </p>
-    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <p>Copyright &copy; {{ site.time | date: '%Y' }} {{ site.author.name }} <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+            </p>
+        </div>
     </div>
     <ul class="list-inline">
         {% if site.github_username %}
@@ -16,16 +16,14 @@
                 {{ site.github_username }}
             </a>
         </li>
-        {% endif %}
-        {% if site.twitter_username %}
+        {% endif %} {% if site.twitter_username %}
         <li>
             <i class="fa fa-twitter"></i>
             <a href="https://twitter.com/{{ site.twitter_username }}">
                 {{ site.twitter_username }}
             </a>
         </li>
-        {% endif %}
-        {% if site.facebook_username %}
+        {% endif %} {% if site.facebook_username %}
         <li>
             <i class="fa fa-facebook"></i>
             <a href="https://facebook.com/{{ site.twitter_username }}">
